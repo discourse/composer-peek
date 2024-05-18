@@ -1,13 +1,14 @@
 import Component from "@glimmer/component";
-import { action } from "@ember/object";
 import { tracked } from "@glimmer/tracking";
-import DButton from "discourse/components/d-button";
+import { action } from "@ember/object";
 import { service } from "@ember/service";
+import DButton from "discourse/components/d-button";
 import bodyClass from "discourse/helpers/body-class";
 
 export default class PeekModeToggle extends Component {
   @service composer;
-  @tracked peekModeActive = localStorage.getItem("peekModeActive") === "true" || false;
+  @tracked
+  peekModeActive = localStorage.getItem("peekModeActive") === "true" || false;
 
   get bodyClassText() {
     return this.peekModeActive ? "peek-mode-active" : "";
@@ -25,10 +26,10 @@ export default class PeekModeToggle extends Component {
   <template>
     {{bodyClass this.bodyClassText}}
     <DButton
-    @action={{this.togglePeekMode}}
-    @preventFocus={{true}}
-    @icon="discourse-sidebar"
-    @class="btn-mini-toggle no-text peek-mode-toggle btn-transparent"
+      @action={{this.togglePeekMode}}
+      @preventFocus={{true}}
+      @icon="discourse-sidebar"
+      @class="btn-mini-toggle no-text peek-mode-toggle btn-transparent"
     />
   </template>
 }
