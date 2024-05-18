@@ -18,9 +18,9 @@
 
         &.has-sidebar-page {
           #main-outlet-wrapper {
-            grid-template-columns: var(--d-sidebar-width) calc(
-                100vw - 35vw - var(--d-sidebar-width)
-              ) 1fr;
+            grid-template-columns:
+              var(--d-sidebar-width) calc(100vw - 35vw - var(--d-sidebar-width))
+              1fr;
           }
           #reply-control:not(.fullscreen).hide-preview {
             transform: translateX(calc(100vw - 33vw));
