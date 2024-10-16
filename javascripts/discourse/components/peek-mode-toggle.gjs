@@ -29,7 +29,7 @@ export default class PeekModeToggle extends Component {
       @action={{this.togglePeekMode}}
       @preventFocus={{true}}
       @icon="discourse-sidebar"
-      @class="btn-mini-toggle no-text peek-mode-toggle btn-transparent"
+      class="btn-mini-toggle no-text peek-mode-toggle btn-transparent"
     />
   </template>
 }
