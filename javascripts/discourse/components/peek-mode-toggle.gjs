@@ -7,6 +7,7 @@ import bodyClass from "discourse/helpers/body-class";
 
 export default class PeekModeToggle extends Component {
   @service composer;
+
   @tracked
   peekModeActive = localStorage.getItem("peekModeActive") === "true" || false;
 

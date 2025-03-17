@@ -7,10 +7,12 @@
     .peek-mode-toggle svg {
       transform: scaleX(-1);
     }
+
     &.composer-open {
       .full-width-enabled .peek-mode-toggle {
         display: inline;
       }
+
       .full-width-enabled.peek-mode-active {
         .grippie {
           display: none;
@@ -22,6 +24,7 @@
               var(--d-sidebar-width) calc(100vw - 35vw - var(--d-sidebar-width))
               1fr;
           }
+
           #reply-control:not(.fullscreen).hide-preview {
             transform: translateX(calc(100vw - 33vw));
             height: 100vh;
@@ -36,6 +39,7 @@
           #main-outlet-wrapper {
             grid-template-columns: 0 calc(100vw - 50vw) 1fr;
           }
+
           #reply-control:not(.fullscreen).hide-preview {
             transform: translateX(calc(100vw - 47vw));
             height: 100vh;
@@ -45,6 +49,7 @@
             left: unset;
           }
         }
+
         .sidebar-wrapper .sidebar-container {
           height: unset;
         }
