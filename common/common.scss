@@ -14,8 +14,14 @@
       }
 
       .full-width-enabled.peek-mode-active {
-        .grippie {
-          display: none;
+        #reply-control.hide-preview {
+          .grippie {
+            display: none;
+          }
+
+          .reply-area {
+            padding-inline: 0.67em;
+          }
         }
 
         &.has-sidebar-page {
@@ -26,10 +32,9 @@
           }
 
           #reply-control:not(.fullscreen).hide-preview {
-            transform: translateX(calc(100vw - 33vw));
             height: 100vh;
             width: 33vw;
-            right: unset;
+            right: 0;
             left: unset;
             max-width: 33vw;
           }
@@ -41,11 +46,10 @@
           }
 
           #reply-control:not(.fullscreen).hide-preview {
-            transform: translateX(calc(100vw - 47vw));
             height: 100vh;
             width: 47vw;
             max-width: 47vw;
-            right: unset;
+            right: 0;
             left: unset;
           }
         }
