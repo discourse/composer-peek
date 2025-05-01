@@ -63,10 +63,6 @@
 }
 
 .alert-peek-mode-dependency {
-  body:not(.staff) &,
-  body.full-width-enabled & {
-    display: none;
-  }
   text-align: center;
   margin: 0;
 
