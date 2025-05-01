@@ -1,3 +1,4 @@
 en:
   theme_metadata:
-    description: ''
+    description: "Dock the composer to the right when space allows"
+  warning: "Hello admin! Composer peek mode requires the <a href='%{link}'>full-width component</a> to be installed"
